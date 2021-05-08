@@ -1,0 +1,8 @@
+<h2>Messages</h2>
+<p>{{ MessagesService.messages.join(" ") }}</p>
+<div>
+  <input type="text" name="message" [(ngModel)]="MessagesService.message" />
+  <button (click)="MessagesService.add(MessagesService.message)">Add</button>
+
+  <div><button (click)="MessagesService.clear()">Clear</button></div>
+</div>
